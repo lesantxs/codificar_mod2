@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cifra de César</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="titulo">
+                <h1>Crypted Coffee</h1>
+            </div>
+
+            <div class="navegacao">
+                <ul>
+                    <li>Cifra de César</li>
+                    <li>Base64</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="principal">
+        <select name="" id="selecione" onclick="escolherOpcao()">
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="cesar">Cifra de César</option>
+            <option value="base64">Base64</option>
+        </select>
+
+        <form id="radio">
+            <div>
+                <input type="radio" id="codificar" name="radio" value="codificar">
+                <label for="codificar">Codificar</label><br>
+            </div>
+            <div>
+                <input type="radio" id="decodificar" name="radio" value="decodificar">
+                <label for="decodificar">Decodificar</label><br>
+            </div>
+        </form>
+
+        <div id="opcoes">
+            <form id="cesar">
+                <label for="cesar">Digite sua mensagem</label>
+                <textarea name="cesar" id="mensagem" cols="60" rows="6"></textarea>
+                <label for="deslocamento">Valor do deslocamento</label>
+                <input type="number" name="deslocamento" id="deslocamento">
+                <label for="mensagemCesar">Essa é sua mensagem</label>
+                <textarea name="mensagem" id="mensagemCesar" cols="60" rows="6" readonly></textarea>
+                <button id="botaoCesar">Confirmar</button>
+            </form>
+
+            <form id="base64">
+                <label for="base64">Digite sua mensagem</label>
+                <textarea name="base64" id="mensagem" cols="60" rows="6"></textarea>
+                <label for="mensagemBase64">Essa é sua mensagem</label>
+                <textarea name="mensagem" id="mensagemBase64" cols="60" rows="6" readonly></textarea>
+                <button id="botaoBase64">Confirmar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Crypted Coffee, todos os direitos reservados - 2021</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

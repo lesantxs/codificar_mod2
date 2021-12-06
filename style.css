@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #312e28;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.titulo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px double #f2eee5;
+}
+
+.titulo h1{
+    color: #f2eee550;
+    padding: 10px 0;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #f2eee5d8;  
+}
+
+.navegacao{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegacao ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    font-size: 18px;
+    color: #f2eee5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacao li:hover{
+    color: #f2eee570;
+}
+
+.principal{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2eee5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #312e28;
+}
+
+#selecione{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    color: #b7844b;
+    box-shadow: 2px 2px 2px #b7844b;
+}
+
+#selecione:focus{
+    outline: 0;
+}
+
+#radio{
+    margin: 10px;
+    width: 210px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#radio div{
+    margin-top: 10px;
+}
+
+#cesar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    padding: 3px;
+    margin-top: 10px;
+}
+
+#base64{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 2px #b7844b;
+    padding: 5px;
+}
+
+textarea:focus{
+    outline: 0;
+}
+
+#deslocamento{
+    border-radius: 5px;
+    border-color: #b7844b;
+    height: 22px;
+    padding: 2px;
+}
+
+#deslocamento:focus{
+    outline: 0;
+}
+
+button{
+    margin-top: 25px;
+    width: 150px;
+    padding: 6px;
+    border: 2px solid #312e28;
+    border-radius: 5px;
+    color: #312e28;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #312e281e;;
+}
+
+button:active{
+    background-color: #312e28;
+    color: #f2eee5;
+}
+
+footer{
+    background-color: #312e28;
+    padding: 15px;
+    text-align: center;
+    color: #f2eee5;
+}
