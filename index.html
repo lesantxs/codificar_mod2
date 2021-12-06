@@ -14,14 +14,14 @@
     <header>
         <nav>
             <div class="titulo">
-                <h1>Crypted Coffee</h1>
+                <h1 onclick="encaminharIndex ()">Crypted Coffee</h1>
             </div>
 
             <div class="navegacao">
                 <ul>
-                    <li>Cifra de César</li>
-                    <li>Base64</li>
-                    <li>GitHub</li>
+                    <li onclick="encaminharCesar ()">Cifra de César</li>
+                    <li onclick="encaminharBase64 ()">Base64</li>
+                    <li onclick="encaminharGitHub ()">GitHub</li>
                 </ul>
             </div>
 
@@ -30,7 +30,7 @@
 
     <main class="principal">
         <select name="" id="selecione" onclick="escolherOpcao()">
-            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="" disabled selected>Escolha um condificador</option>
             <option value="cesar">Cifra de César</option>
             <option value="base64">Base64</option>
         </select>
@@ -72,6 +72,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./encaminha.js"></script>
 </body>
 
 </html>
