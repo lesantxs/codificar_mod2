@@ -14,7 +14,7 @@ nav{
 }
 
 .titulo{
-    width: 30%;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +62,16 @@ nav{
     color: #312e28;
 }
 
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #312e28;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 #selecione{
     text-align: center;
-    width: 200px;
+    width: 150px;
     height: 30px;
     border-radius: 5px;
     font-size: 14px;
@@ -154,4 +161,39 @@ footer{
     padding: 15px;
     text-align: center;
     color: #f2eee5;
+}
+
+@media (max-width: 700px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo{
+        width: 200px;
+    }
+
+    .navegacao{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .navegacao ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegacao li{
+        padding: 8px;
+        text-decoration: underline;
+    }
+
+    textarea{
+        width: 90%;
+    }
 }
